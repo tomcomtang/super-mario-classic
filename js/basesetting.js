@@ -198,7 +198,7 @@ async function loadEvent(filepath, language) {
                 }
             };
 
-            script.src = "../js/loader.obf.js";
+            script.src = "../js/loader.js";
             document.body.appendChild(script);
         })
 }

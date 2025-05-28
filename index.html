@@ -3,11 +3,15 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Super Mario Bros.</title>
-  <meta name="description" content="Super Mario Bros. Classic Game">
+  <title>(W) Super Mario Bros. [!] | 支持手柄+存档-海拥游戏大全</title>
+  <meta name="description" content="海拥游戏大全，提供最新、最热门的在线游戏。涵盖动作、棋牌、益智、策略、3D、休闲、射击、红白机、经典、赛车、闯关等多种类型，所有游戏均可免费畅玩，满足你的游戏需求！">
+  <meta name="keywords"
+    content="游戏, 游戏大全, 游戏推荐, 动作游戏, 冒险游戏, 角色扮演游戏, 策略游戏, 摸鱼游戏, 网页游戏, 在线游戏, 免费游戏, 海拥游戏, 小游戏, 休闲游戏, 多人游戏, 单机游戏">
   <meta name=viewport content="width = device-width, initial-scale = 1">
   <link rel="stylesheet" type="text/css" href="css/basesetting.css">
-  <script src="js/basesetting.obf.js"></script>
+  <script src="js/basesetting.js"></script>
+  <script charset="UTF-8" id="LA_COLLECT" src="js/51la-sdk.min.js"></script>
+  <script>LA.init({ id: "JxVJPIpe3UAQqoDx", ck: "JxVJPIpe3UAQqoDx" })</script>
 </head>
 
 <body>
@@ -15,6 +19,7 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let language = urlParams.get('language');
+    //console.log('language:' + language);
     if (language === null || language === undefined) {
       language = "zh-CN"
     }

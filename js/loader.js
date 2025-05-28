@@ -9,6 +9,9 @@
                 if ('undefined' != typeof EJS_paths && typeof EJS_paths[file] === 'string') {
                     return EJS_paths[file];
                 } else {
+                    if (file.endsWith('.js') && !file.endsWith('.obf.js')) {
+                        return scriptPath + file.replace('.js', '.obf.js');
+                    }
                     return scriptPath + file;
                 }
             }();

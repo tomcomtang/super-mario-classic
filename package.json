@@ -1,0 +1,11 @@
+{
+  "name": "super-mario-classic",
+  "version": "1.0.0",
+  "description": "Super Mario Classic Game",
+  "scripts": {
+    "obfuscate": "node obfuscate.js"
+  },
+  "dependencies": {
+    "javascript-obfuscator": "^4.1.0"
+  }
+}

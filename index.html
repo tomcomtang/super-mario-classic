@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Super Mario Bros.</title>
+  <meta name="description" content="Super Mario Bros. Classic Game">
+  <meta name=viewport content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" type="text/css" href="css/basesetting.css">
+  <script src="js/basesetting.min.js"></script>
+</head>
+
+<body>
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let language = urlParams.get('language');
+    if (language === null || language === undefined) {
+      language = "zh-CN"
+    }
+    window.onload = loadEvent("games/super_mario/super_mario.nes", language);
+  </script>
+</body>
+
+</html>
